@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment2"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <!--android:background="@drawable/toolbar_color"-->
+        <include
+            layout="@layout/toolbar"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_above="@+id/radioGroupId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="30dp"
+            android:text="Choose which gallary you want to see"
+            android:textSize="15sp">
+
+        </TextView>
+
+        <RadioGroup
+
+            android:id="@+id/radioGroupId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="14dp">
+
+            <RadioButton
+
+                android:id="@+id/radButt1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:text="SHOW CAR" />
+
+            <RadioButton
+                android:id="@+id/radButt2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:text="SHOW FOOD" />
+
+            <RadioButton
+                android:id="@+id/radButt3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="SHOW CLOTHES" />
+
+        </RadioGroup>
+
+
+        <CheckBox
+            android:id="@+id/checkID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioGroupId"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="50dp"
+            android:text="I have agreed to the terms and conditions" />
+
+        <Button
+            android:id="@+id/login1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/checkID"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_color1"
+            android:text="Show Gallary"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold">
+
+        </Button>
+
+    </RelativeLayout>
+</LinearLayout>
